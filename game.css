@@ -448,7 +448,7 @@ button {
   height: var(--game-board-height);
   background: linear-gradient(180deg, #0A1628 0%, #0D2344 40%, #0E3060 100%);
   overflow: hidden;
-  display: none; /* Shown by JS when game starts */
+  display: block; /* Fix container height */
   outline: none;
 }
 
