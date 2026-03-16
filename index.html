@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="Drop by Drop: The Jerry Can Challenge — A Charity: Water campus engagement game." />
-  <title>Charity: Water | Drop by Drop</title>
-  <meta property="og:title" content="Charity: Water | Drop by Drop" />
-  <meta property="og:description" content="Drop by Drop: The Jerry Can Challenge — A Charity: Water campus engagement game." />
+  <meta name="description" content="Drop by Drop: The Jerry Can Challenge — A charity: water campus engagement game." />
+  <title>charity: water | Drop by Drop</title>
+  <meta property="og:title" content="charity: water | Drop by Drop" />
+  <meta property="og:description" content="Drop by Drop: The Jerry Can Challenge — A charity: water campus engagement game." />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,12 +15,8 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       PAGE WRAPPER — controls overall layout (mobile vs desktop)
-  ============================================================ -->
   <div id="page-wrapper">
 
-    <!-- LEFT SIDEBAR — Desktop only, hidden on mobile -->
     <aside id="sidebar-left" class="sidebar" aria-label="How to Play">
       <div class="sidebar-card">
         <h2 class="sidebar-title">HOW TO PLAY</h2>
@@ -49,38 +45,30 @@
       </div>
     </aside>
 
-    <!-- ============================================================
-         MAIN GAME COLUMN — visible on all devices
-    ============================================================ -->
     <main id="game-column" aria-label="Game Area">
 
-      <!-- PAGE-LEVEL HEADER (visible above the game, primarily desktop) -->
       <header id="page-header">
-        <p class="page-header-eyebrow">CHARITY: WATER | DIGITAL ENGAGEMENT CONCEPT | COLLEGE STUDENTS</p>
+        <p class="page-header-eyebrow">charity: water | DIGITAL ENGAGEMENT CONCEPT | COLLEGE STUDENTS</p>
       </header>
 
-      <!-- GAME CONTAINER — the main interactive area -->
       <div id="game-container">
 
-        <!-- GAME HEADER (always visible in-game) -->
         <header id="game-header">
           <div id="header-left">
             <img src="images/logo-charitywater.png"
-                 alt="Charity: Water"
+                 alt="charity: water"
                  id="cw-logo"
                  onerror="this.style.display='none'; document.getElementById('cw-logo-text').style.display='block';" />
-            <span id="cw-logo-text" style="display:none; font-family:'Montserrat',sans-serif; font-weight:800; color:#FFC907; font-size:1rem;">Charity: Water</span>
+            <span id="cw-logo-text" style="display:none; font-family:'Montserrat',sans-serif; font-weight:800; color:#FFC907; font-size:1rem;">charity: water</span>
           </div>
           <div id="header-center">
             <h1 id="game-title">DROP BY DROP</h1>
             <p id="game-subtitle">The Jerry Can Challenge</p>
           </div>
           <div id="header-right">
-            <!-- placeholder for future menu/settings -->
-          </div>
+            </div>
         </header>
 
-        <!-- SCORE / LIVES BAR -->
         <div id="stats-bar">
           <div id="score-display">
             <span class="stats-label">SCORE</span>
@@ -89,12 +77,10 @@
           <div id="lives-display">
             <span class="stats-label">LIVES</span>
             <div id="lives-icons">
-              <!-- 3 life drop icons rendered by JS -->
-            </div>
+              </div>
           </div>
         </div>
 
-        <!-- REWARD PROGRESS BAR -->
         <div id="progress-section">
           <div id="progress-header">
             <span id="progress-label">REWARD PROGRESS: Unlock at 50 Clean Drops!</span>
@@ -108,11 +94,10 @@
           </div>
         </div>
 
-        <!-- WELCOME SCREEN — shown before game starts -->
         <div id="welcome-screen">
           <div id="welcome-content">
             <div id="welcome-jerry-can">
-              <img src="images/jerry-can.png" alt="Charity: Water Jerry Can" id="welcome-can-img"
+              <img src="images/jerry-can.png" alt="charity: water Jerry Can" id="welcome-can-img"
                    onerror="this.outerHTML='<div class=\'css-jerry-can welcome-can-fallback\'></div>'" />
             </div>
             <h2 id="welcome-headline">Every Drop Counts.</h2>
@@ -125,16 +110,12 @@
               ▶ START IMPACT
             </button>
             <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer" class="cw-link">
-              CharityWater.org
+              charitywater.org
             </a>
           </div>
         </div>
 
-        <!-- GAME BOARD — active game area -->
         <div id="game-board" aria-label="Active game area" tabindex="0">
-          <!-- Falling drops injected here by JavaScript -->
-
-          <!-- PLAYER — Jerry Can -->
           <div id="player-container">
             <div id="player-arrows">
               <span class="player-arrow player-arrow--left">◀</span>
@@ -150,25 +131,18 @@
           </div>
         </div>
 
-        <!-- SCREEN FLASH OVERLAY — for visual feedback -->
         <div id="screen-flash" aria-hidden="true"></div>
 
-        <!-- GAME FOOTER -->
         <footer id="game-footer">
-          <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer" class="cw-link">CharityWater.org</a>
+          <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer" class="cw-link">charitywater.org</a>
           <span class="footer-sep">|</span>
           <span class="footer-tagline">100% of donations fund clean water projects.</span>
         </footer>
 
-      </div><!-- /#game-container -->
-    </main><!-- /#game-column -->
-
-    <!-- RIGHT SIDEBAR — Desktop only, hidden on mobile -->
-    <aside id="sidebar-right" class="sidebar" aria-label="Campus Impact">
+      </div></main><aside id="sidebar-right" class="sidebar" aria-label="Campus Impact">
       <div class="sidebar-card">
         <h2 class="sidebar-title">CAMPUS IMPACT</h2>
 
-        <!-- Circular progress / reward reveal -->
         <div id="reward-circle-wrap">
           <div id="reward-circle">
             <svg id="reward-svg" viewBox="0 0 120 120" width="120" height="120">
@@ -203,14 +177,7 @@
           Learn More →
         </a>
       </div>
-    </aside><!-- /#sidebar-right -->
-
-  </div><!-- /#page-wrapper -->
-
-  <!-- ============================================================
-       WIN MODAL
-  ============================================================ -->
-  <div id="modal-overlay" class="modal-overlay" aria-modal="true" role="dialog" aria-labelledby="modal-title" style="display:none;">
+    </aside></div><div id="modal-overlay" class="modal-overlay" aria-modal="true" role="dialog" aria-labelledby="modal-title" style="display:none;">
     <div id="modal-box" class="modal-box">
       <div id="modal-icon" class="modal-icon modal-icon--win">💧</div>
       <h2 id="modal-title" class="modal-title"></h2>
@@ -236,16 +203,12 @@
       <div class="modal-actions">
         <button id="replay-btn" class="btn-primary">↩ PLAY AGAIN</button>
         <a href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-          CharityWater.org →
+          charitywater.org →
         </a>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================
-       FLOATING SCORE ANIMATION POOL
-       ("+1", "-3" text elements injected/removed by JS)
-  ============================================================ -->
   <div id="float-text-pool" aria-hidden="true"></div>
 
   <script src="game.js"></script>
